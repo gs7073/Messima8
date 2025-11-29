@@ -42,4 +42,20 @@ public abstract class LibraryItem {
     }
 
 
+    public void borrow() {
+        if (isBorrowed == false) {
+            isBorrowed = true;
+        }
+    }
+
+    public void returnItem() {
+        isBorrowed = false;
+    }
+
+    public abstract double calculateLateFee(int daysPastDue);
+
+    @Override
+    public String toString() {
+        return "Item ID: " + itemId + " Title: " + title + " Year: " + yearPublished + " Borrowed: " + isBorrowed;
+    }
 }
