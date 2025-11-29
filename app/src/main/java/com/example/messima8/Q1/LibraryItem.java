@@ -11,7 +11,9 @@ public abstract class LibraryItem {
     public LibraryItem(String title, int yearPublished) {
         this.itemId = UUID.randomUUID();
         this.title = title;
+
         this.yearPublished = yearPublished;
+
         this.isBorrowed = false;
     }
 
