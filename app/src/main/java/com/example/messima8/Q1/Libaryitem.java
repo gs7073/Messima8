@@ -16,4 +16,30 @@ public abstract class LibraryItem {
     }
 
 
+
+    public UUID getItemId() {
+        return itemId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getYearPublished() {
+        return yearPublished;
+    }
+
+    public boolean isBorrowed() {
+        return isBorrowed;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setYearPublished(int yearPublished) {
+        this.yearPublished = yearPublished;
+    }
+
+
 }
